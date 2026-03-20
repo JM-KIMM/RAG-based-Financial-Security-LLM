@@ -4,10 +4,6 @@
 본 프로젝트는 **'2025 금융 AI challenge: 금융 AI 모델 경쟁'**에 출품하여 **최종 6위 (283팀 중)**를 기록한 모델의 파이프라인입니다. 
 금융권의 AI 활용 한계를 극복하기 위해 SFT(Supervised Fine-Tuning) 대신 **RAG(Retrieval-Augmented Generation) 기반의 아키텍처를 채택**하여, 환각(Hallucination)을 최소화하고 법률/보안 데이터의 최신성을 유지할 수 있는 질의응답 시스템을 구축했습니다.
 
-* **진행 기간:** 2025.08 ~ 2025.09
-* **팀명 / 인원:** 쓰디쓴커피 / 4명
-* **담당 역할:** 팀 리더 (데이터 수집, RAG 파이프라인 설계 및 구축)
-
 ## 🎯 Key Challenges & Solutions
 
 ### 1. 제한된 컴퓨팅 자원 극복
@@ -29,7 +25,3 @@
 * **LLM:** `SKT/A.X-4.0-Light` (한국어 특화)
 * **Embedding / Vector DB:** `dragonkue/snowflake-arctic-embed-l-v2.0-ko` / `FAISS (IndexFlatIP)`
 * **Re-ranker:** `dragonkue/bge-reranker-v2-m3-ko`
-
-## 💡 Lessons Learned
-* **문서화와 협업의 중요성:** 파이프라인이 복잡해지면서 발생한 실험 내용의 휘발 문제를 해결하기 위해, 하이퍼파라미터 변경 이력과 회의 결과를 Notion에 체계적으로 기록하는 습관을 들였습니다.
-* **유연한 데이터 파이프라인 설계:** 향후 새로운 데이터가 모이더라도 전체 알고리즘 수정 없이 CSV에 이어 붙이는 형식만으로 모델을 쉽게 발전시킬 수 있는 구조를 완성했습니다.
