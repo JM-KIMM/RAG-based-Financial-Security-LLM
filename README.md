@@ -1,5 +1,4 @@
-# RAG-based-Financial-Security-LLM
-# 🛡️ FinSec-RAG-Pipeline: 금융보안 특화 RAG 기반 질의응답 시스템
+# 🛡️ RAG-based-Financial-Security-LLM: 금융보안 특화 RAG 기반 질의응답 시스템
 
 ## 📌 Project Overview
 [cite_start]본 프로젝트는 **'2025 금융 AI challenge: 금융 AI 모델 경쟁'**에 출품하여 **최종 6위 (283팀 중)**를 기록한 모델의 파이프라인입니다[cite: 134, 135, 156]. 
