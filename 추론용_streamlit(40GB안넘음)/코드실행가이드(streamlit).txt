@@ -1,0 +1,20 @@
+코드 실행 가이드
+
+**해당 폴더 실행전 반드시 모든 환경 초기화한상태로 진행**
+따로 모델을 훈련시키지 않았기 때문에 다운로드한 모델로 바로 진행 
+
+0. gpu가 연결되어있는상태 , vscode로 실행
+-> 추론용_streamlit(40GB안넘음)폴더를 복사
+
+
+1. streamlit실행(pip및모델다운로드포함).ipynb 
+-> 필요한 모델 및 라이브러리 설치
+-> 혹여나, 모델 다운 로그에 에러가 떠도 완료 될때까지 대기
+-> 전체 코드 다 돌아가는데 10분정도 걸리는거같음
+ 
+2. streamlit_app.py 실행
+
+터미널을 열고   
+-> py -m streamlit run streamlit_app.py
+또는
+-> streamlit run "/root/추론용_streamlit(40GB안넘음)/streamlit_app.py"
