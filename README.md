@@ -133,6 +133,7 @@ py -m streamlit run streamlit_app.py
 ---
 
 ## 🤖 A.X-4.0-Light RAG 추론 파이프라인
+<img width="5906" height="4986" alt="image" src="https://github.com/user-attachments/assets/aaed07cf-2a21-4c51-8f1a-971ebd4f1fe9" />
 
 ### 전체 흐름도
 
