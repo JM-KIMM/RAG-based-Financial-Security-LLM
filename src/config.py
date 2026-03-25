@@ -37,10 +37,15 @@ LAW_CHUNK_OVERLAP = 50
 LAW_CHUNK_MIN_CHARS = 100
 DEDUP_HASHES = True
 
-# 모델 Hugging Face 이름
-EMBEDDING_MODEL_NAME = 'BM-K/KoSimCSE-roberta-multitask'
-GENERATOR_MODEL_NAME = 'google/gemma-2b-it'
-RERANKER_MODEL_NAME = 'BM-K/KoRerank-v1-distil'
+# 모델 이름
+# Generator: 한국어 특화, 금융보안 도메인 용어 이해도 우수
+GENERATOR_MODEL_NAME = 'A.X-4.0-Light'
+# Embedding: 한국어 특화 문장 임베딩, 도메인 검색 성능 강화
+EMBEDDING_MODEL_NAME = 'dragonkue/Snowflake Arctic Embed v2.0-ko'
+# Reranker: Cross-Encoder 기반 정밀 리랭킹
+RERANKER_MODEL_NAME = 'dragonkue/BGE Re-ranker v2 m3-ko'
+
+# Long Context Support: 최대 16,384 토큰 (약 300~400쪽 문서 처리 가능)
 
 # FAISS 인덱스 경로
 FAISS_INDEX_PATH = os.path.join(PROCESSED_DATA_DIR, 'faiss_index.bin')
